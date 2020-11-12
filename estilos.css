@@ -28,14 +28,20 @@ li {
   text-align: center;
 }
 
-ul li ul {
-  position: relative;
-  top: 50px;
-  left: 0px;
+ul li ul { /*Acrescentei o z-index: 1; e diminuí o top  */
+  position: absolute;
+  top: 40px;
+  left: -30px;
   display: none;
+  z-index: 1;
   padding: 0;
 }
 
+.colorir:hover{ /*Adicionei para colorir o texto o link como um quadrado completo*/
+  cursor: pointer;
+  background-color: rgb(230, 119, 156);
+  padding: 5px;
+}
 
 .dropdown-menu li {
   width: 220px;
