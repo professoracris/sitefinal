@@ -1,6 +1,5 @@
 body {
   font-family: "Ruluko", sans-serif;
-  background: #f1ade7;
   background: url(./imagem/fotocapa.png) no-repeat;
   background-position: right bottom;
   background-size: 250px 440px;
@@ -21,12 +20,34 @@ header img {
   animation: aparecer 4s;
 }
 
+/*FORMATAÇÃO PARA MENU RESPONSIVO*/
+
+label[for="botaoMenu"]{
+  padding: 5px;
+  background-color: rgba(250, 11, 131, 0.5);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size:30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+  
+}
+
+#botaoMenu {
+  display: none;
+}
+
+
+
 /*FORMATAÇÃO PARA DROPDOWN*/
 li {
   width: 120px;
   position: relative;
   text-align: center;
 }
+
 
 ul li ul { /*Acrescentei o z-index: 1; e diminuí o top  */
   position: absolute;
@@ -37,20 +58,18 @@ ul li ul { /*Acrescentei o z-index: 1; e diminuí o top  */
   padding: 0;
 }
 
-.colorir:hover{ /*Adicionei para colorir o texto o link como um quadrado completo*/
-  cursor: pointer;
-  background-color: rgb(230, 119, 156);
-  padding: 5px;
-}
+
 
 .dropdown-menu li {
   width: 220px;
   margin: 10px;
 }
 
+
+
 .dropdown:hover .dropdown-menu {
   display: inline-block;
-  background: white;
+  background: #fcfcfb;
   border: solid 5px rgb(231, 6, 194);
   border-radius: 50px;
 }
@@ -69,10 +88,10 @@ nav ul li {
   margin-inline-end: 120px;
 }
 
-nav ul li a:hover {
+nav ul li:hover {
   cursor: pointer;
   background-color: rgb(230, 119, 156);
-  padding: 5px;
+  
 }
 
 nav ul li a {
@@ -80,47 +99,42 @@ nav ul li a {
   color: black;
 }
 
+/*home PAGE*/
 
-/*HOME PAGE*/
-
-#p1 {
-  text-align: center;
-  animation: texto-deslizante 6s infinite;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-#p2 {
-  text-align: center;
-  animation: texto-deslizante 6s infinite;
-  animation-delay:2s;
+.banner {
+  margin: auto;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
 }
-#p3 {
+.slider {
+  width: 550px;
+  height: 300px;
+  position: absolute;
+  left: 100px;
+  opacity: 0;
+  animation-name: animaSlider;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+
+
+.slider:nth-child(2) {
+  animation-delay: 5s;
   
-  text-align: center;
-  animation: texto-deslizante 6s infinite;
-  animation-delay: 3s;
-  
-
+}
+.slider:nth-child(3) {
+  animation-delay: 10s;
 }
 
-#home p {
-  font-size: 30px;
-  text-align: center;
-  margin-left: 0px;
-  margin-bottom: 60px;
-  width: 180px;
-}
 
-#capa {
-  width: 90px;
-  height: 134px;
-}
 
-#home {
-  display: flex;
-  justify-content: space-between;
-  padding: clamp(50px, 30px, 30px);
-  width: 900px;
-}
 
 
 /*FORMATAÇÃO DO FOOTER*/
@@ -147,13 +161,13 @@ footer img {
   height: 50px;
 }
 
-#endereço {
+#endereco {
   margin: 20px 70px 0px 0px;
   display: flex;
   max-height: 100px;
 }
 
-#endereço p {
+#endereco p {
   margin: 5px 5px 20px 10px;
 }
 
@@ -170,32 +184,4 @@ footer img {
 }
 
 
-/*FORMATAÇÃO PARA CELULAR*/
 
-@media (max-width: 572px) {
-  body {
-    background: none;
-  }
-
-  #home {
-    background: url(./imagem/icon-background.png);
-    background-position: center;
-  }
-
-  header {
-    font-size: 10px;
-  }
-
-  footer {
-    font-size: 10px;
-  }
-
-  footer img {
-    width: 20px;
-    height: 20px;
-  }
-
-  #contato {
-    margin-top: 20px;
-  }
-}

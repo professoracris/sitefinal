@@ -1,0 +1,126 @@
+
+@media (max-width: 800px) {
+    body {
+      background-image: none;
+      
+    }
+  
+    #dropdown li {
+      display: inline-block;
+      width: 100vw;
+  
+    }
+  
+   #imglogo {
+    position: absolute;
+    margin-left: 200px;
+   }
+  
+   
+   header {
+     background-color: white;
+     border: none;
+     
+   }
+  
+    #botaoMenu:checked ~ nav{
+        margin-left: 0;
+        transition: 1s;
+    }
+  
+    nav {
+      margin-left: -100%;
+      transition: all 0.4;
+      align-items: left;
+      border: none;
+      
+    }
+  
+  
+    nav ul li {
+      width: 50%;
+      float: none;
+      background-color: rgba(250, 11, 131, 0.5);
+      margin-top: 0;
+      height: 30px;
+      width: 90vw;
+      }
+  
+  .dropdown:hover .dropdown-menu {
+    display: inline-block;
+    background: #fcfcfb;
+    border: solid 5px rgb(0, 0, 0);
+    border-radius: 1px;
+  }
+  
+  nav ul li ul li {
+    background-color: white;
+    font-size: 15px;
+    text-align: right;
+    
+  }
+  
+    nav ul {
+      margin: 0;
+    }
+  
+    nav ul ul {
+      position: static;
+      overflow: hidden;
+      max-height: 0;
+      transition: all 4s;
+    }
+  
+    nav ul li:hover ul {
+      height: auto;
+      max-height: 200px;
+  
+    }
+    
+    label[for="botaoMenu"]{
+      display: block;
+    }
+    
+    .banner {
+      width: 100vw;
+      height: 50vw;
+  
+    }
+  
+    .slider {
+      width: 300px;
+      height: 200px;
+    }
+  
+  
+  
+    footer {
+      font-size: 10px;
+      width: 100vw;
+      height: 30vw;
+      position: static;
+      display: block;
+      text-align: center;
+      
+  }
+  
+    
+  
+  #endereco {
+     justify-content: center;
+     margin-left: 50px;
+     
+  }
+  
+  footer img {
+      width: 20px;
+      height: 20px;
+    }
+  
+  
+    #insta {
+      margin: 10px 0 10px 0;
+    }
+  
+  }
+  

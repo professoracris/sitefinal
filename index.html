@@ -6,16 +6,22 @@
     <link rel="icon" href="imagem/icon.png">
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="formatocelular.css">
     <link href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap" rel="stylesheet">
     <title>Estética Luana Silva</title>
 </head>
 <body>
+
+    
     <header>
-        <img src="imagem/logomarca.png">
+        
+        <img id="imglogo" src="imagem/logomarca.png">
+        <input type="checkbox" id="botaoMenu">
+        <label for="botaoMenu">&#9776;</label>
+    
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-
                 <li class="dropdown"><a href="#procedimentosF"> Procedimentos Faciais</a>
                     <ul id="procedimentosF" class="dropdown-menu">
                          <li><a href="./Paginas/procedimentos.html#sobrancelha">Design de sobrancelha</a></li>
@@ -32,33 +38,24 @@
                     <li><a href="./Paginas/procedimentos.html#depilação">Depilação</a></li>
                     <li><a href="./Paginas/procedimentos.html#drenagem">Drenagem linfática</a></li>
                     <li><a href="./Paginas/procedimentos.html#modeladora">Massagem Modeladora</a></li>
-                    <li><a href="./Paginas/procedimentos.html#relaxante">Massagem relaxante</a></li>
-                                        
+                    <li><a href="./Paginas/procedimentos.html#relaxante">Massagem relaxante</a></li>                   
                     </ul> 
                 </li>
                              
-                <li><a href="#preços"> Tabela de preços</a></li>
-                <li><a href="./Paginas/agende_horario.html"> Contato</a></li>
+                <li><a href="./Paginas/valores.html"> Tabela de preços</a></li>
+                <li><a href="./Paginas/agende_horario.html">Contato/Duvidas</a></li>
                                 
             </ul>
         </nav>
     </header>
-    <section id="home"> 
-        
-        <p id="p1">
-            Estética facial e corporal
-        </p>
+    <main id="home"> 
+    <section class="banner">
+         <img src="./imagem/slider1.png" alt="" class="slider">
+         <img src="./imagem/slider2.jpg" alt="" class="slider">
+         <img src="./imagem/slider3.png" alt="" class="slider">
 
-        <p id="p2">
-            Cuidados com o corpo e a mente
-        </p>
-        
-        <p id="p3">
-            Venha realçar a sua beleza
-        </p>
-  
     </section>
-
+ </main>
     <footer>
         <div id="contato"> 
             <div id="insta">
@@ -68,12 +65,12 @@
             <br>
             <div id="wts">
                 <a href="https://api.whatsapp.com/send?phone=5531983749453"> <img src="./imagem/wts.png"></a>
-                <p>(31) 99999-9999</p>  
+                <p>(31) 98374-9453</p>  
             </div>
 
         </div>
 
-        <div id="endereço">
+        <div id="endereco">
            <a href="https://goo.gl/maps/vzknRJ4gp4GGcjTEA"> <img src="imagem/location.jpg"></a>
            <a href="https://goo.gl/maps/vzknRJ4gp4GGcjTEA"><p>Cep 32400-000<br>
                 R. Bela Petruschi, 263 <br>

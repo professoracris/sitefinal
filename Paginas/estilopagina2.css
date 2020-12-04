@@ -1,198 +1,379 @@
 body {
-    font-family: 'Nunito', sans-serif;
-    background-image: linear-gradient(to bottom right,  rgb(238, 188, 205), white, white,white, rgb(238, 188, 205) );
-
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(to bottom right,  rgb(238, 188, 205), white, white,white, rgb(238, 188, 205) );
+  margin: 0;
+  padding: 0;
 }
+
+
 
 #headerFlex {
-  display: flex;
+display: flex;
+
 }
+
 
 #logoAcima {
-  position: absolute;
-  width: 1000px;
-  height: 40px;
-  left: 200px;
-  top: 5px;
+position: absolute;
+width: 50px;
+height: 40px;
+left: 20px;
+top: 5px;
+animation: aparecer 4s;
+
 }
 
-#logoAbaixo {
-  position: absolute;
-  width: 1000px;
-  height: 40px;
-  left: 200px;
-  top: 90px;
-}
+
 
 #headerFlex h1 {
-    font-size: 30px;
-    margin-left: 10px;
-    animation: aparecer 4s;
-    
+  font-size: 30px;
+  margin-left: 10px;
+  animation: aparecer 4s;
+  margin-top: 50px;
+  display: flex;
+
 }
+
+.vertical {
+width:1px;
+word-wrap: break-word;
+white-space: pre-wrap;
+font-size: 11px;
+}
+
 
 
 
 /*FORMATAÇÃO PARA DROPDOWN*/
 
 li {
-  width: 100px;
-  position: relative;
-  text-align: center;
+width: 100px;
+position: relative;
+text-align: center;
 }
+
 
 ul li ul { /*Acrescentei o z-index: 1; e diminuí o top  */
-  position: absolute;
-  top: 40px;
-  left: -30px;
-  display: none;
-  z-index: 1;
-  padding: 0;
+position: absolute;
+top: 40px;
+left: -30px;
+display: none;
+z-index: 1;
+padding: 0;
 }
 
-.colorir:hover{ /*Adicionei para colorir o texto o link como um quadrado completo*/
-  cursor: pointer;
-  background-color: rgb(230, 119, 156);
-  padding: 5px;
-}
 
 .dropdown-menu li {
-  width: 220px;
-  margin: 10px;
+width: 220px;
+margin: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: inline-block;
-  background: white;
-  border: solid 5px #e706c2;
-  border-radius: 50px;
+display: inline-block;
+background: white;
+border: solid 5px #e706c2;
+border-radius: 50px;
 }
 
 
 nav {
-  display: flex;
-  list-style-type: none;
-  align-items: center;
-  animation: aparecer 4s;
-  
-  
+display: flex;
+list-style-type: none;
+align-items: center;
+animation: aparecer 4s;
+border-bottom: 5px solid rgb(221, 17, 143);
+border-top: 5px solid rgb(221, 17, 143);
+height: 6vw;
+margin-top: 40px;
+font-weight: bolder;
+
 }
 
 nav ul li {
-  margin: 10px;
-  display: inline-block;
-  margin-inline-end: 120px;
+margin: 10px;
+display: inline-block;
+margin-inline-end: 120px;
 }
 
 nav ul li a:hover {
-  cursor: pointer;
-  background-color: rgb(230, 119, 156);
-  padding: 5px;
+cursor: pointer;
+background-color: rgb(230, 119, 156);
+padding: 3px;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: black;
+text-decoration: none;
+color: black;
 }
+/*INPUT E FORMULÁRIO*/
+
+#perguntas>p {
+  font-size: 25px;
+  text-align: justify;
+  margin-left: 20px;
+  font-style: oblique;
+  font-family: 'ruluko';
+  background-image: linear-gradient(to bottom right, rgb(226, 37, 141), pink, rgb(162, 214, 230), rgb(0, 217, 255));
+  padding: 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  box-shadow:  9px 7px 5px rgba(50, 50, 50, 0.77);
+ 
+}
+
+#perguntas {
+  width: 450px;
+  margin: 0;
+}
+
+select {
+  width: 300px;
+  height: 30px;
+  border: 3px solid rgb(243, 23, 195);
+  font-family: 'ruluko'; 
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+#btenviar {
+  background: url(../imagem/icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 110px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 15px;
+  height: 60px;
+  width: 70px;
+  padding-top: 15px;
+  -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  box-shadow:  9px 7px 5px rgba(50, 50, 50, 0.77);
+  margin-top: 10px;
+}
+
+#btenviar:hover {
+  background-color: #e706c2;
+  
+}
+
+form {
+  margin-top: 10px;
+}
+
+#nome {
+  width: 200px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid rgb(243, 23, 195);
+  
+}
+
 
 /*FORMATAÇÃO MAIN*/
 
-main {
-    text-align: center;
-    font-size: 20px;
-    animation: aparecer 4s;
+#agendeseuh {
+  margin-left: 50px;
+
 }
- 
+
+
+#homeagenda {
+  display: flex;
+
+
+}
+
+
+
+main {
+  text-align: center;
+  font-size: 20px;
+  animation: aparecer 4s;
+}
+
+.floatleft {
+  float: left;
+  margin-left: 10px;
+  
+}
+
+.floatleft h1 {
+
+  font-size: 40px;
+  margin: 0;
+}
+
+#logonome {
+  font-size: 10px;
+  width: 150px;
+  border: 2px solid black;
+  border-radius: 100%;
+} 
+
+
+.floatright {
+  float: right;
+  margin-right: 50px;
+}
+
+
+#blocopreço {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+th,td {
+  text-align: left;
+  padding:7px;
+}
+
+
+#centralpreço {
+  margin-right: 50px;
+}
+
+#coroa {
+  width: 10vw;
+  height: 10vw;
+  margin-left: 10px;
+}
+
+h1,h2 {
+font-family: 'Sansita Swashed', cursive;
+font-size: 40px;
+}
+
+table {
+  border: 3px solid black;
+}
+
+#promo {
+  border: 5px dashed rgb(216, 10, 130);
+  animation: borda 1s infinite;
+  margin-top: 10px;
+}
+
 
 
 article > section {
-    display: flex;
-    margin: 100px;
-    
+  display: flex;
+  margin: 100px;
+  -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+  box-shadow:  9px 7px 5px rgba(50, 50, 50, 0.77);
+  height: 400px;
+  padding-top: 100px;
+  animation: surgirSection 3s 1;
+
+
 }
 
 
 section > img {
-    width: 300px;
-    height: 250px;
+  width: 400px;
+  height: 350px;
+  
 }
 
 .homeTexto {
-    width: 500px;
-    padding-right: 200px;
-    padding-left: 200px;
-    
+font-size: 25px;
+  width: 500px;
+  margin-right: 100px;
+  margin-left: 100px;
+  
 }
 
 #topo {
-  text-decoration: none;
-  color: black;
-  display: flex;
-  justify-content: center;
+text-decoration: none;
+color: black;
+display: flex;
+justify-content: center;
 }
 
 main h5:hover {
-  background-color: #e706c2;
+background-color: #e706c2;
 }
 
-#agende img:hover {
-  height: 150px;
+.agende img:hover {
+height: 140px;
 
 }
+
+#contato h1 {
+  margin: 0;
+  padding-bottom:40px;
+}
+
+
 
 #local {
-  position: absolute;
-  justify-content: right;
-  margin: 150px 0 0px 950px;
+position: absolute;
+justify-content: right;
+margin: 100px 0 50px 950px;
+
 }
 
 #local iframe {
-  width:350px;
-  height:200px;
-  border-radius: 30px;
-  border: solid;
-  border-style: dashed;
-  border-color: #e706c2;
+width:350px;
+height:200px;
+border-radius: 30px;
+border: solid;
+border-style: dashed;
+border-color: #e706c2;
 }
 
 
 /*FORMATAÇÃO FOOTER*/
 footer {
-  display: flex;
-  font-size: 20px;
-  background: rgba(247, 4, 164, 0.17);
-  justify-content: space-between;
-  animation: upFooter 1s;
+display: flex;
+font-size: 20px;
+background: rgba(247, 4, 164, 0.17);
+justify-content: space-between;
+animation: upFooter 1s;
+position: fixed;
+bottom:0;
+width:100%;
+
 }
 
+
+
 footer a {
-  text-decoration: none;
+text-decoration: none;
 }
 
 
 footer img {
-  width: 50px;
-  height: 50px;
+width: 50px;
+height: 50px;
 }
 
 #endereço {
-  margin: 20px 70px 0px 0px;
-  display: flex;
-  max-height: 100px;
+margin: 20px 70px 0px 0px;
+display: flex;
+max-height: 100px;
 }
 
 #endereço p {
-  margin: 5px 5px 20px 10px;
+margin: 5px 5px 20px 10px;
 }
 
 #contato {
-  margin-left: 10px;
+margin-left: 10px;
 }
 
 #insta {
-  display: inline-flex;
+display: inline-flex;
 }
 
 #wts {
-  display: inline-flex;
+display: inline-flex;
 }
+
+
+

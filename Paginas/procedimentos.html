@@ -8,28 +8,33 @@
       href="https://fonts.googleapis.com/css2?family=Ruluko&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="estilopagina2.css" />
+    <link rel="stylesheet" href="./estilopagina2.css"/>
     <link rel="stylesheet" href="../animation.css" />
+    <link rel="stylesheet" href="formatocelular.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
     <title>Estética Luana Silva</title>
   </head>
 
   <body>
     <header>
+      
       <section id="headerFlex">
+        <img id="logoAcima" src="../imagem/coroa.svg">
         <h1>
-          LUANA <br />
-          SILVA
+          LUA<br> NA
+          <div class="vertical">SILVA</div>
         </h1>
-        <img id="logoAcima" src="../imagem/logomarca2.png" />
+        
         <nav>
           <ul>
             <li>
               <a href="../index.html">Home <br></a>
             </li>
-
+            
             <li class="dropdown"><a href="#procedimentosF"> Procedimentos Faciais</a>
               <ul id="procedimentosF" class="dropdown-menu">
-                <li><a href="#sobrancelha">Design de sobrancelha</a></li>
+                <li><a id="clicksobrancelha" href="#sobrancelha">Design de sobrancelha</a></li>
                 <li><a href="#henna">Design com henna</a></li>
                 <li><a href="#detoxFacial">Detox facial</a></li>
                 <li><a href="#drenagemFacial">Drenagem linfática facial</a></li>
@@ -48,18 +53,22 @@
               </ul>
             </li>
 
-            <li><a href="#preços">Tabela de preços</a></li>
-            <li><a href="./agende_horario.html">Contato<br></a></li>
+            <li><a href="./valores.html">Tabela de preços</a></li>
+            <li><a href="./agende_horario.html">Contato/Duvidas<br></a></li>
           </ul>
         </nav>
-       <img id="logoAbaixo" src="../imagem/logomarca2.png" />
+        
       </section>
     </header>
     <main>
-      <h1>PROCEDIMENTOS</h1>
+      <img src="../imagem/coroa.svg">
+      <div id="titulopagina2">
+      <h1>Procedimentos</h1>
+      <h2>Faciais & Corporais</h2>
+    </div>
       <article>
-        <section>
-          <div id="sobrancelha" class="homeTexto">
+        <section id="sobrancelha">
+          <div class="homeTexto">
             <h2>Design de sobrancelha</h2>
             <p>
               A finalidade de um design de sobrancelha é embelezar transformar e
@@ -71,9 +80,9 @@
           <img src="../imagem/design1.jpeg" />
         </section>
 
-        <section>
+        <section id="henna">
           <img src="../imagem/design2.jpeg" />
-          <div id="henna" class="homeTexto">
+          <div  class="homeTexto">
             <h2>Design com Henna</h2>
             <p>
               Após fazer o design de sobrancelha, é aplicado a henna, um produto
@@ -83,8 +92,8 @@
           </div>
         </section>
 
-        <section>
-          <div id="detoxFacial" class="homeTexto">
+        <section id="detoxFacial">
+          <div  class="homeTexto">
             <h2>Detox facial</h2>
             <p>
               O detox ajuda no controle da oleosidade, promove afinamento da
@@ -96,12 +105,12 @@
           <img src="../imagem/detoxfacial.jpg" />
         </section>
 
-        <section>
+        <section id="drenagemFacial">
           <img src="../imagem/drenagem_facial.jpg" />
-          <div id="drenagemFacial" class="homeTexto">
+          <div  class="homeTexto">
             <h2>Drenagem linfática facial</h2>
             <p>
-              a drenagem é feita através de massagens e creme 8 ativos, com o
+              A drenagem é feita através de massagens e creme 8 ativos, com o
               intuito de retirar líquidos do rosto. A massagem é bem leve, pois
               o líquido está na camada superficial da pele. Além disso,
               proporciona um relaxamento para a pessoa que receberá.
@@ -109,14 +118,13 @@
           </div>
         </section>
 
-        <section>
-          <div id="limpezaPele" class="homeTexto">
+        <section id="limpezaPele">
+          <div  class="homeTexto">
             <h2>Limpeza de pele</h2>
             <p>
-              A limpeza de pele tem como objetivo tirar comedões ( famosos
-              cravos), milium (cistos compostos de queratina, localizada,
-              principalmente, ao redor dos olhos) e espinhas. Ajuda em casos de
-              oleosidade excessiva. Feita com extrator de cravos e, agulha (em
+              Tem como objetivo tirar comedões(famosos cravos), milium(cistos compostos de queratina, localizada,
+              principalmente, ao redor dos olhos) e espinhas.Ajuda em casos de
+              oleosidade excessiva.Feita com extrator de cravos e, agulha(em
               casos mais avançados), a limpeza de pele é feita em sessões,
               podendo ser feita até em 2 vezes na semana.
             </p>
@@ -125,9 +133,9 @@
           <img src="../imagem/limpeza_de_pele.jpg" />
         </section>
 
-        <section>
+        <section id="peeling">
           <img src="../imagem/peeling_quimico.jpg" />
-          <div id="peeling" class="homeTexto">
+          <div  class="homeTexto">
             <h2>Peeling químico</h2>
             <p>
               É um tratamento estético onde são aplicados ácidos sobre a pele,
@@ -140,11 +148,8 @@
 
         <!--  corporal -->
 
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-
-        <section>
-          <div id="depilação" class="homeTexto">
+        <section id="depilação">
+          <div  class="homeTexto">
             <h2>Depilação</h2>
             <p>
               Usando cera quente, a depilação pode ser feita em todo o corpo:
@@ -153,12 +158,12 @@
             </p>
           </div>
 
-          <img src="../imagem/design1.jpeg" />
+          <img src="../imagem/depilação.jpg" />
         </section>
 
-        <section>
+        <section id="modeladora">
           <img src="../imagem/modeladora.jpg" />
-          <div id="modeladora" class="homeTexto">
+          <div  class="homeTexto">
             <h2>Massagem Modeladora</h2>
             <p>
               Como o nome já diz, a massagem tem o objetivo de modelar o corpo.
@@ -168,22 +173,22 @@
           </div>
         </section>
 
-        <section>
-          <div id="detoxFacial" class="homeTexto">
-            <h2>Detox facial</h2>
+        <section id="drenagem">
+          <div  class="homeTexto">
+            <h2>Drenagem linfática</h2>
             <p>
-              O detox ajuda no controle da oleosidade, promove afinamento da
-              pele de forma rápida e segura. tua de forma completa na melhora da
-              textura da pele, reduzindo as imperfeições e o brilho excessivo.
+              É uma técnica que permite que o escoamento dos líquidos acumulados pelo corpo, 
+              sendo esta uma função do sistema linfático. A drenagem linfática manual é feita através de uma massagem 
+              suave com uso das mãos, com objetivo de acelerar a retirada dos líquidos acumulados entre as células.
             </p>
           </div>
 
-          <img src="../imagem/detoxfacial.jpg" />
+          <img src="../imagem/drenagemlinf.jpg" />
         </section>
 
-        <section>
+        <section id="relaxante">
           <img src="../imagem/massagem.jpg">
-          <div id="relaxante" class="homeTexto">
+          <div  class="homeTexto">
             <h2>Massagem relaxante</h2>
             <p>
               Feita em cada parte do corpo, a massagem relaxante nada mais é do
@@ -194,7 +199,7 @@
         </section>
       </article>
 
-      <a id="topo" href="#headerFlex"><h5>Voltar para o topo &uarr;</h5></a>
+      
     </main>
 
     <footer>
@@ -211,10 +216,10 @@
           <a href="https://api.whatsapp.com/send?phone=5531983749453">
             <img src="../imagem/wts.png"
           /></a>
-          <p>(31) 99999-9999</p>
+          <p>(31) 98374-9453</p>
         </div>
       </div>
-
+      <a id="topo" href="#headerFlex"><h5>Voltar para o topo &uarr;</h5></a>
       <div id="endereço">
         <a href="https://goo.gl/maps/vzknRJ4gp4GGcjTEA">
           <img src="../imagem/location.jpg"

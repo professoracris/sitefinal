@@ -10,82 +10,88 @@
     />
     <link rel="stylesheet" href="estilopagina2.css" />
     <link rel="stylesheet" href="../animation.css" />
+    <script src="./JS.js"></script>
     <title>Estética Luana Silva</title>
   </head>
 
   <body>
     <header>
       <section id="headerFlex">
+        <img id="logoAcima" src="../imagem/coroa.svg">
         <h1>
-          LUANA <br />
-          SILVA
+          LUA<br> NA
+          <div class="vertical">SILVA</div>
         </h1>
-        <img id="logoAcima" src="../imagem/logomarca2.png" />
-        <nav>
+      <nav>
           <ul>
-            <li>
-              <a href="../index.html">Home <br /></a>
-            </li>
-
-            <li class="dropdown">
-              <a href="#procedimentosF"> Procedimentos Faciais</a>
-              <ul id="procedimentosF" class="dropdown-menu">
-                <li><a href="#sobrancelha">Design de sobrancelha</a></li>
-                <li><a href="#henna">Design com henna</a></li>
-                <li><a href="#detoxFacial">Detox facial</a></li>
-                <li><a href="#drenagemFacial">Drenagem linfática facial</a></li>
-                <li><a href="#limpezaPele">Limpeza de pele</a></li>
-                <li><a href="#peeling">Peeling químico</a></li>
-              </ul>
-            </li>
-
-            <li class="dropdown">
-              <a href="#procedimentosC"> Procedimentos Corporais</a>
-              <ul id="procedimentosC" class="dropdown-menu">
-                <li><a href="#depilação">Depilação</a></li>
-                <li><a href="#drenagem">Drenagem linfática</a></li>
-                <li><a href="#modeladora">Massagem Modeladora</a></li>
-                <li><a href="#relaxante">Massagem relaxante</a></li>
-              </ul>
-            </li>
-
-            <li><a href="#preços"> Tabela de preços</a></li>
-            <li>
-              <a href="#agende"> Contato<br /></a>
-            </li>
+              <li><a href="../index.html">Home <br></a></li>
+              <li class="dropdown"><a href="#procedimentosF"> Procedimentos Faciais</a>
+                  <ul id="procedimentosF" class="dropdown-menu">
+                       <li><a href="./procedimentos.html#sobrancelha">Design de sobrancelha</a></li>
+                       <li><a href="./procedimentos.html#henna">Design com henna</a></li>
+                       <li><a href="./procedimentos.html#detoxFacial">Detox facial</a></li>
+                       <li><a href="./procedimentos.html#drenagemFacial">Drenagem linfática facial</a></li>
+                       <li><a href="./procedimentos.html#limpezaPele">Limpeza de pele</a></li>
+                       <li><a href="./procedimentos.html#peeling">Peeling químico</a></li>                     
+                  </ul>
+              </li>
+  
+              <li class="dropdown"><a href="#procedimentosC"> Procedimentos Corporais</a>
+                 <ul id="procedimentosC" class="dropdown-menu">
+                  <li><a href="./procedimentos.html#depilação">Depilação</a></li>
+                  <li><a href="./procedimentos.html#drenagem">Drenagem linfática</a></li>
+                  <li><a href="./procedimentos.html#modeladora">Massagem Modeladora</a></li>
+                  <li><a href="./procedimentos.html#relaxante">Massagem relaxante</a></li>                   
+                  </ul> 
+              </li>
+                           
+              <li><a href="./valores.html"> Tabela de preços</a></li>
+              <li><a href="#contato"> Contato/Duvidas</a></li>
+                              
           </ul>
-        </nav>
-        <img id="logoAbaixo" src="../imagem/logomarca2.png" />
-      </section>
-    </header>
+      </nav>
+    </section>
+  </header>
     <main>
+     <section id="homeagenda">
+  
+      <div id="perguntas">
+        <h1>Perguntas frequentes</h1>
+        Nome.:  <input id="nome" type="text">
+       
+        <form>Dúvida:
+          <select name="dúvidas">
+          <option id="p0" value="p0"></option>
+          <option id="p1" value="p1">Depilar com cera causa danos para pele ?</option>
+          <option id="p2" value="p2">A depilação com cera dói ?</option>
+          <option id="p3" value="p3">Qual a diferença do design de sobrancelhas?</option>
+          <option id="p4" value="p4">A micropigmentação é para sempre ?</option>
+          </select>
+          </form>
+          <button id="btenviar">Enviar</button>
+
+      </div>
+
         <div id="local">
             <h2>Onde estamos:</h2>
             </a>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d937.3217608868562!2d-44.07392477793441!3d-19.996463965583057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa6bf140e6ba771%3A0x7d365e635c69a0f5!2sR.%20Bela%20Petruschi%2C%20263%20-%20Colorado%2C%20Ibirit%C3%A9%20-%20MG%2C%2032400-000!5e0!3m2!1spt-BR!2sbr!4v1604694306620!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-
+      <div id="agendeseuh">
       <h1>Agende seu Horário</h1> 
-      <p> Ou tire suas dúvidas comigo!</p>
-      <div id="agende">
-        <div id="">
-          <a
+          <a class="agende"
             href="https://instagram.com/estetica_luanasilva?igshid=c1m2clnd0zpl"
             > <img src="../imagem/insta.png"
           /></a>
-          
-        </div>
         <br>
         <br>
         <br>
-        <div id="">
-          <a href="https://api.whatsapp.com/send?phone=5531983749453">
+
+          <a class="agende" href="https://api.whatsapp.com/send?phone=5531983749453">
             <img src="../imagem/wts.png"
           /></a>
         </div>
-
-    </div>
-
+      </section>
    </main> 
 
     
